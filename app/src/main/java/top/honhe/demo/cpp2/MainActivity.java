@@ -24,7 +24,6 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 ((TextView) findViewById(R.id.textView)).setText(stringFromJNI());
-                int result = intFromJNI();
             }
         });
 
@@ -56,7 +55,6 @@ public class MainActivity extends AppCompatActivity {
      * which is packaged with this application.
      */
     public native String stringFromJNI();
-    public native int intFromJNI();
 
     // Used to load the 'native-lib' library on application startup.
     static {

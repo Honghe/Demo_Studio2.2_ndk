@@ -13,8 +13,3 @@ Java_top_honhe_demo_cpp2_MainActivity_stringFromJNI(
     std::string hello = "Hello from C++";
     return env->NewStringUTF(hello.c_str());
 }
-
-JNIEXPORT jint JNICALL
-Java_top_honhe_demo_cpp2_MainActivity_intFromJNI(JNIEnv *env, jobject instance) {
-    return 3;
-}
